@@ -5,6 +5,12 @@ public class Yakuza extends Humain{
 	private String clan;
 	private int streetcred = 0;
 	
+	@Override
+	public void direBonjour() {
+		super.direBonjour();
+		parler("Mon clan est celui de " + this.clan);
+	}
+	
 	public int getStreetCred() {
 		return streetcred;
 	}
