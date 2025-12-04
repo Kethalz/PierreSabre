@@ -21,7 +21,7 @@ public class Yakuza extends Humain{
 		int extortion = victime.seFaireExtorquer();
 		this.argent += extortion;
 		this.streetcred ++;
-		parler("J'ai piqué les " + extortion + "sous de " + victime.getNom() +", ce qui me fait 45 sous dans ma poche. Hi ! Hi !");
+		parler("J'ai piqué les " + extortion + " sous de " + victime.getNom() +", ce qui me fait 45 sous dans ma poche. Hi ! Hi !");
 	}
 	
 	public int perdre() {
@@ -33,7 +33,7 @@ public class Yakuza extends Humain{
 	
 	public void gagner(int gain) {
 		this.argent+=gain;
-		parler("Ce ronin pensait vraiment battre " + getNom() + "du clan " + this.clan
-		+  "? Je l'ai dépouillé de ses " + gain + "sous");
+		parler("Ce ronin pensait vraiment battre " + getNom() + " du clan " + this.clan
+		+  "? Je l'ai dépouillé de ses " + gain + " sous");
 	}
 }
